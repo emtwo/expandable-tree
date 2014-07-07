@@ -1,0 +1,26 @@
+
+.link {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.node {
+  cursor: move;
+  fill: #ccc;
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+text {
+  cursor: move;
+  -moz-user-select: none;
+  pointer-events: none;
+  text-anchor: middle;
+  dominant-baseline: central;
+  user-select: central;
+}
+
+rect {
+  fill: #FFFFFF;
+  stroke: #000000;
+}
