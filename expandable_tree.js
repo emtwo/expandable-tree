@@ -30,6 +30,9 @@ svg.append("rect")
     .attr("width", width)
     .attr("height", height);
 
+svg.append("g").attr("class", "links");
+svg.append("g").attr("class", "nodes");
+
 var link, node;
 
 var nodes = originalNodes;
@@ -42,13 +45,13 @@ function update() {
     .links(links)
     .start();
 
-  link = svg.selectAll(".link")
+  link = svg.select(".links").selectAll(".link")
   link = link.data(links);
   link.exit().remove();
   link.enter().append("line")
     .attr("class", "link");
 
-  node = svg.selectAll(".node");
+  node = svg.select(".nodes").selectAll(".node");
   node = node.data(nodes, function(d) { return  d.id; });
   node.exit().remove();
   node.enter().append("g")
