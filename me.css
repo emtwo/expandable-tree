@@ -18,6 +18,8 @@ text {
   text-anchor: middle;
   dominant-baseline: central;
   user-select: central;
+  stroke: none;
+  fill: #000000;
 }
 
 rect {
